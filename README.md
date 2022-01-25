@@ -13,10 +13,16 @@ Resumen general del sistema\
 Output de consola del proceso especificado\
 ```/proc/{PID}/cmdline```
 
+Volcados de memoria del Kernel\
+```/var/crash/```
+
 ## Comandos y pipes utiles
 
 Reemplazar \n por verdaderos saltos de linea\
 ```sed 's/\\n/\n/g'```
+
+Desempaquetar Crash report del Kernel\
+```apport-unpack```
 
 
 ## Python 
