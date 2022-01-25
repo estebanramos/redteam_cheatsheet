@@ -13,6 +13,9 @@ Resumen general del sistema\
 Output de consola del proceso especificado\
 ```/proc/{PID}/cmdline```
 
+Forzar Core Dump\
+```kill -SIGSEGV 2373```
+
 Volcados de memoria del Kernel\
 ```/var/crash/```
 
