@@ -1,4 +1,4 @@
-# Hack The Box Cheatsheet
+# Hacker Cheatsheet
 Cheatsheet con comandos e información útil para HTB
 
 # Linux 
