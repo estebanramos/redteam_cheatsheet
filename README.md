@@ -51,3 +51,10 @@ Deep Scan\
 Capturar tráfico ICMPv6 y DHCPv6\
 ```tcpdump -i <interface name> -n -vv '(udp port 546 or 547) or icmp6'```
 
+# Privilege Escalation
+
+Usuarios con capacidad de:\
+`(root) SETENV: NOPASSWD:`\
+Se puede crear un binario propio y ejecutar el binario/script privilegiado con:\
+```sudo PATH=$PWD:$PATH [Binario con privilegios en sudo -l]```
+
