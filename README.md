@@ -27,6 +27,9 @@ Reemplazar \n por verdaderos saltos de linea\
 Desempaquetar Crash report del Kernel\
 ```apport-unpack```
 
+Listar que archivos puede ejecutar como root el usuario
+```sudo -l```
+
 
 ## Python 
 Elevar shell\
