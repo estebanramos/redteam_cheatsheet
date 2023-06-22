@@ -1,5 +1,5 @@
-# Hacker Cheatsheet
-Cheatsheet con comandos e información útil para HTB
+# Red Team Cheatsheet
+Useful Cheatsheet for Red Team Engagements
 
 # Linux 
 
