@@ -4,38 +4,38 @@ Useful Cheatsheet for Red Team Engagements
 # Linux 
 
 ## Directorios y Archivos utiles
-Puertos escuchando en formato Hex\
+Listening ports in Hex format\
 ```/proc/net/tcp```
 
-Resumen general del sistema\
+General System Information\
 ```/proc/sched_debug```
 
-Output de consola del proceso especificado\
+Console Output of a process \
 ```/proc/{PID}/cmdline```
 
-Forzar Core Dump\
+Force Core Dump\
 ```kill -SIGSEGV 2373```
 
-Volcados de memoria del Kernel\
+Kernel Memory Dumps\
 ```/var/crash/```
 
-## Comandos y pipes utiles
+## Commands
 
-Reemplazar \n por verdaderos saltos de linea\
+Reeplace \n with real line breaks\
 ```sed 's/\\n/\n/g'```
 
-Desempaquetar Crash report del Kernel\
+Unpack Crash report Kernel\
 ```apport-unpack```
 
-Listar que archivos puede ejecutar como root el usuario\
+List executable files with sudo\
 ```sudo -l```
 
 
 ## Python 
-Elevar shell\
+Upgrade Shell\
 ```python3 -c 'import pty; pty.spawn("/bin/bash")'```
 
-Cuando uso Requests y el texto en el GET se desencodea\
+Decode Requests responses\
 ```urllib.parse.quote('/')```
 
 # Nmap
@@ -48,14 +48,14 @@ Deep Scan\
 
 # Tcpdump
 
-Capturar tráfico ICMPv6 y DHCPv6\
+Capture ICMPv6 and DHCPv6 traffic\
 ```tcpdump -i <interface name> -n -vv '(udp port 546 or 547) or icmp6'```
 
 # Privilege Escalation
 
-Usuarios con capacidad de:\
+Users with:\
 `(root) SETENV: NOPASSWD:`\
-Se puede crear un binario propio y ejecutar el binario/script privilegiado con:\
+Create own binary and ejecute as root:\
 ```sudo PATH=$PWD:$PATH [Binario con privilegios en sudo -l]```
 
 Docker Breakout\
